@@ -1,0 +1,42 @@
+### Get all
+GET http://localhost:3000/auth/signup
+
+
+### Get By ID
+GET http://localhost:3000/auth/signup/2
+
+
+### Create user
+POST http://localhost:3000/auth/signup
+Content-type: application/json
+
+{
+  "email": "hebert9991-@igcp.com.br",
+  "password": "12345678"
+}
+
+###Login
+POST http://localhost:3000/auth/signin
+Content-type: application/json
+
+{
+  "email": "hebert202134340@igcp.com.br",
+  "password": "12345678"
+}
+
+### Update by ID
+PUT http://localhost:3000/auth/signup/2
+Content-type: application/json
+
+{
+  "email": "naoémaisoWILL@igcp.com.br",
+  "password": "Nova_senha"
+}
+
+### Delete By ID
+DELETE  http://localhost:3000/auth/signup/2
+
+
+### Get All target
+
+GET http://localhost:3000/auth/target
